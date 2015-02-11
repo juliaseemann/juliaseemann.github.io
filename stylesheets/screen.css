@@ -235,18 +235,22 @@ a {
 .credits {
   cursor: default;
 }
+/* line 129, ../sass/_main.scss */
+.credits a {
+  text-decoration: none;
+}
 
-/* line 131, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 .contact, .credits {
   text-align: center;
 }
 
-/* line 135, ../sass/_main.scss */
+/* line 138, ../sass/_main.scss */
 .contact a {
   text-decoration: none;
 }
 
-/* line 140, ../sass/_main.scss */
+/* line 143, ../sass/_main.scss */
 .show {
   opacity: 1;
 }

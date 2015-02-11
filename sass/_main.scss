@@ -126,6 +126,9 @@ a{
 
 .credits{
   cursor: default;
+  a{
+    text-decoration: none;
+  }
 }
 
 .contact, .credits{

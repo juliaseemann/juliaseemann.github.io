@@ -7,9 +7,9 @@ $(function() {
 
   var fadeDuration = 700;
 
-  var AnotherComposition = [['julia_seemann4.jpg'], ['julia_seemann1.jpg', 'julia_seemann2.jpg'], ['julia_seemann5.jpg', 'julia_seemann6.jpg'], ['julia_seemann14.jpg'], ['julia_seemann10.jpg', 'julia_seemann11.jpg'], ['julia_seemann9.jpg'] , ['julia_seemann7.jpg', 'julia_seemann8.jpg'],['julia_seemann12.jpg', 'julia_seemann13.jpg'] ,[{text: {photography: 'Photography: Lauretta Suter', model: 'Model: Brogan Loftus' }}]];
+  var AnotherComposition = [['julia_seemann4.jpg'], ['julia_seemann1.jpg', 'julia_seemann2.jpg'], ['julia_seemann5.jpg', 'julia_seemann6.jpg'], ['julia_seemann14.jpg'], ['julia_seemann10.jpg', 'julia_seemann11.jpg'], ['julia_seemann9.jpg'] , ['julia_seemann7.jpg', 'julia_seemann8.jpg'],['julia_seemann12.jpg', 'julia_seemann13.jpg'] ,[{text: {credit: 'http://www.laurettasuter.ch/697037', photography: 'Photography: Lauretta Suter', model: 'Model: Brogan Loftus' }}]];
 
-  var FragileBeauty = [['Lookbook FRAGILE_Seite_04.jpg'] , ['Lookbook FRAGILE_Seite_02.jpg', 'Lookbook FRAGILE_Seite_03.jpg'], ['Lookbook FRAGILE_Seite_01.jpg', 'Lookbook FRAGILE_Seite_08.jpg'], ['Lookbook FRAGILE_Seite_07.jpg', 'Lookbook FRAGILE_Seite_21.jpg'], ['Lookbook FRAGILE_Seite_12.jpg', 'Lookbook FRAGILE_Seite_11.jpg'], ['Lookbook FRAGILE_Seite_15.jpg', 'Lookbook FRAGILE_Seite_22.jpg'], ['Lookbook FRAGILE_Seite_19.jpg', 'Lookbook FRAGILE_Seite_16.jpg'],['Lookbook FRAGILE_Seite_18.jpg', 'Lookbook FRAGILE_Seite_20.jpg'],  [{text: {photography: 'Photography: Dominik Jermann', model: 'Models: Tamara Petrovic & Sophia Seemann' }}]];
+  var FragileBeauty = [['Lookbook FRAGILE_Seite_04.jpg'] , ['Lookbook FRAGILE_Seite_02.jpg', 'Lookbook FRAGILE_Seite_03.jpg'], ['Lookbook FRAGILE_Seite_01.jpg', 'Lookbook FRAGILE_Seite_08.jpg'], ['Lookbook FRAGILE_Seite_07.jpg', 'Lookbook FRAGILE_Seite_21.jpg'], ['Lookbook FRAGILE_Seite_12.jpg', 'Lookbook FRAGILE_Seite_11.jpg'], ['Lookbook FRAGILE_Seite_15.jpg', 'Lookbook FRAGILE_Seite_22.jpg'], ['Lookbook FRAGILE_Seite_19.jpg', 'Lookbook FRAGILE_Seite_16.jpg'],['Lookbook FRAGILE_Seite_18.jpg', 'Lookbook FRAGILE_Seite_20.jpg'],  [{text: {credit: 'http://www.d-o-m.ch/index.php?page=1' ,photography: 'Photography: Dominik Jermann', model: 'Models: Tamara Petrovic & Sophia Seemann' }}]];
 
   if(lastItem(currentUrl) === "another_composition.html"){
     photoCollection = AnotherComposition;
@@ -91,7 +91,7 @@ $(function() {
   }
 
   function textTemplate(text){
-    return "<div class='textOnly'><div class='credits'><p>" + text.photography + "</p><br><p>" + text.model + "</p></div></div>"
+    return "<div class='textOnly'><div class='credits'><a href=" + text.credit + "><p>" + text.photography + "</p></a><br><p>" + text.model + "</p></div></div>"
   }
 
 });
