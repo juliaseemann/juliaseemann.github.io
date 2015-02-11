@@ -1,0 +1,179 @@
+.container{
+  @include span(12 of 12);
+  @include container;
+  @include clearfix;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 35px;
+  margin-bottom: 200px;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+a{
+  color: #000;
+}
+
+// @-webkit-keyframes fade-in {
+//   0%   { opacity: 0; }
+//   100% { opacity: 1; }
+// }
+
+// img.main{
+//   opacity: 0;
+
+//   -webkit-animation-name: fade-in;
+//   -webkit-animation-duration: 1s;
+//   -webkit-animation-timing-function: ease-in;
+//   -webkit-animation-iteration-count: 1;
+//   -webkit-animation-delay: .75s;
+// }
+
+// img.main.visible {
+//   opacity: 1;
+// }
+
+.menu ul li{
+  &:first-of-type{
+    margin-top: 0px;
+  }
+  margin: 30px 0px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+}
+
+.logo{
+  margin: 40px 0px;
+  a{
+    text-decoration: none;
+  }
+  h1{
+    font-family: 'MyriadPro-Cond', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    letter-spacing: 2px;
+    font-size: 65px;
+    letter-spacing: 2px;
+  }
+}
+
+.current{
+  font-family: 'MyriadPro-Bold';
+}
+
+
+.ag1{
+  @include span(2 of 12);
+  @include clearfix;
+  //margin-left: span(1 wide of 12);
+}
+
+.ag2{
+  @include span(12 of 12);
+  @include clearfix;
+  //margin-left: span(1 wide of 12);
+}
+
+// full length photo
+.ag3{
+  @include span(8 of 12);
+  @include clearfix;
+}
+
+// half length photo
+.ag4{
+  @include span(4 of 8);
+  @include clearfix;
+  &:nth-child(2){
+    @include span(4 of 8 last);
+  }
+}
+
+.ag5{
+  @include span(6 of 8);
+  @include clearfix;
+  margin-left: span(1 wide of 8);
+}
+
+
+
+.ag6{
+  @include span(4 of 8);
+  @include clearfix;
+  margin-left: span(2 wide of 8);
+}
+
+// This will need to be adjusted for media queries
+.textOnly{
+  height: 400px;
+}
+
+.about, .contact, .credits{
+  @include vertical-align;
+  p{
+    line-height: 1.6em;
+  }
+}
+
+.credits{
+  cursor: default;
+}
+
+.contact, .credits{
+  text-align: center;
+}
+
+.contact a{
+  text-decoration: none;
+}
+
+
+.show{
+  opacity: 1;
+}
+
+
+// .ag3 {
+//   @include span(12 of 12);
+//   @include clearfix;
+
+//   // // tablet view
+//   @include breakpoint(600px) {
+//     @include span(8 of 12);
+//     margin-left: span(2 wide of 12);
+//   }
+
+//   //desktop view
+
+//   // @include breakpoint($vertical1) {
+//   //   @include span(4 of 12);
+//   //   margin-left: span(4 wide of 12);
+//   // }
+
+//   // @include breakpoint($vertical1) {
+//   //   @include span(6 of 12);
+//   //   margin-left: span(3 wide of 12);
+//   // }
+
+//   // desktop view
+//   @include breakpoint(900px) {
+//     @include span(6 of 12);
+//     margin-left: span(3 wide of 12);
+//   }
+
+//   // vertical consideration
+
+
+//   // @include breakpoint(1070px) {
+
+//   // }
+// }
