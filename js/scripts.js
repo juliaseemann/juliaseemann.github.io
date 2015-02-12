@@ -91,7 +91,7 @@ $(function() {
   }
 
   function textTemplate(text){
-    return "<div class='textOnly'><div class='credits'><a href=" + text.credit + "><p>" + text.photography + "</p></a><br><p>" + text.model + "</p></div></div>"
+    return "<div class='textOnly'><div class='credits'><a target='_blank' href=" + text.credit + "><p>" + text.photography + "</p></a><br><p>" + text.model + "</p></div></div>"
   }
 
 });
