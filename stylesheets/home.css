@@ -20,11 +20,12 @@ body{
 }
 
 .logo h1{
-  font-family: 'MyriadPro-Cond', sans-serif;
+  font-family: 'bebas_neue_regularregular', sans-serif;
   font-size: 60px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 .welcome h4{

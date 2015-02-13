@@ -129,28 +129,54 @@ a {
 
 /* line 54, ../sass/_main.scss */
 .logo {
-  margin: 40px 0px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 30px 0px;
 }
-/* line 56, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .logo a {
   text-decoration: none;
 }
-/* line 59, ../sass/_main.scss */
+/* line 61, ../sass/_main.scss */
 .logo h1 {
-  font-family: 'MyriadPro-Cond', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'bebas_neuebold', sans-serif;
+  letter-spacing: 5px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-  letter-spacing: 2px;
-  font-size: 65px;
-  letter-spacing: 2px;
+  font-size: 45px;
+}
+@media (min-width: 800px) {
+  /* line 54, ../sass/_main.scss */
+  .logo {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    overflow: hidden;
+    *zoom: 1;
+    margin: 40px 0px;
+  }
+  /* line 73, ../sass/_main.scss */
+  .logo a {
+    text-decoration: none;
+  }
+  /* line 76, ../sass/_main.scss */
+  .logo h1 {
+    font-family: 'bebas_neuebold', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    font-size: 60px;
+  }
 }
 
-/* line 69, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 .current {
   font-family: 'MyriadPro-Bold';
 }
 
-/* line 74, ../sass/_main.scss */
+/* line 91, ../sass/_main.scss */
 .ag1 {
   width: 15.25424%;
   float: left;
@@ -159,7 +185,7 @@ a {
   *zoom: 1;
 }
 
-/* line 80, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 .ag2 {
   width: 100%;
   float: left;
@@ -169,7 +195,7 @@ a {
   *zoom: 1;
 }
 
-/* line 87, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 .ag3 {
   width: 66.10169%;
   float: left;
@@ -178,7 +204,7 @@ a {
   *zoom: 1;
 }
 
-/* line 93, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 .ag4 {
   width: 48.71795%;
   float: left;
@@ -186,14 +212,14 @@ a {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 96, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
 .ag4:nth-child(2) {
   width: 48.71795%;
   float: right;
   margin-right: 0;
 }
 
-/* line 101, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .ag5 {
   width: 74.35897%;
   float: left;
@@ -203,7 +229,7 @@ a {
   margin-left: 12.82051%;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .ag6 {
   width: 48.71795%;
   float: left;
@@ -213,12 +239,12 @@ a {
   margin-left: 25.64103%;
 }
 
-/* line 116, ../sass/_main.scss */
+/* line 133, ../sass/_main.scss */
 .textOnly {
   height: 400px;
 }
 
-/* line 120, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 .about, .contact, .credits {
   position: relative;
   top: 50%;
@@ -226,31 +252,31 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 122, ../sass/_main.scss */
+/* line 139, ../sass/_main.scss */
 .about p, .contact p, .credits p {
   line-height: 1.6em;
 }
 
-/* line 127, ../sass/_main.scss */
+/* line 144, ../sass/_main.scss */
 .credits {
   cursor: default;
 }
-/* line 129, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 .credits a {
   text-decoration: none;
 }
 
-/* line 134, ../sass/_main.scss */
+/* line 151, ../sass/_main.scss */
 .contact, .credits {
   text-align: center;
 }
 
-/* line 138, ../sass/_main.scss */
+/* line 155, ../sass/_main.scss */
 .contact a {
   text-decoration: none;
 }
 
-/* line 143, ../sass/_main.scss */
+/* line 160, ../sass/_main.scss */
 .show {
   opacity: 1;
 }
