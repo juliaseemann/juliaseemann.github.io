@@ -89,8 +89,12 @@ a{
 
 
 .ag1{
-  @include span(2 of 12);
+  @include span(3 of 12);
   @include clearfix;
+  @include breakpoint(950px) {
+    @include span(2 of 12);
+    @include clearfix;
+  }
   //margin-left: span(1 wide of 12);
 }
 
@@ -102,8 +106,12 @@ a{
 
 // full length photo
 .ag3{
-  @include span(8 of 12);
+  @include span(9 of 12 last);
   @include clearfix;
+  @include breakpoint(950px) {
+    @include span(8 of 12);
+    @include clearfix;
+  }
 }
 
 // half length photo
@@ -132,6 +140,10 @@ a{
 // This will need to be adjusted for media queries
 .textOnly{
   height: 400px;
+  @include breakpoint(950px) {
+    height: 300px;
+  }
+
 }
 
 .about, .contact, .credits{

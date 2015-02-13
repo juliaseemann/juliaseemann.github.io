@@ -178,14 +178,24 @@ a {
 
 /* line 91, ../sass/_main.scss */
 .ag1 {
-  width: 15.25424%;
+  width: 23.72881%;
   float: left;
   margin-right: 1.69492%;
   overflow: hidden;
   *zoom: 1;
 }
+@media (min-width: 950px) {
+  /* line 91, ../sass/_main.scss */
+  .ag1 {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
 
-/* line 97, ../sass/_main.scss */
+/* line 101, ../sass/_main.scss */
 .ag2 {
   width: 100%;
   float: left;
@@ -195,16 +205,26 @@ a {
   *zoom: 1;
 }
 
-/* line 104, ../sass/_main.scss */
+/* line 108, ../sass/_main.scss */
 .ag3 {
-  width: 66.10169%;
-  float: left;
-  margin-right: 1.69492%;
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
   overflow: hidden;
   *zoom: 1;
 }
+@media (min-width: 950px) {
+  /* line 108, ../sass/_main.scss */
+  .ag3 {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
 
-/* line 110, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .ag4 {
   width: 48.71795%;
   float: left;
@@ -212,14 +232,14 @@ a {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 113, ../sass/_main.scss */
+/* line 121, ../sass/_main.scss */
 .ag4:nth-child(2) {
   width: 48.71795%;
   float: right;
   margin-right: 0;
 }
 
-/* line 118, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .ag5 {
   width: 74.35897%;
   float: left;
@@ -229,7 +249,7 @@ a {
   margin-left: 12.82051%;
 }
 
-/* line 126, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 .ag6 {
   width: 48.71795%;
   float: left;
@@ -239,12 +259,18 @@ a {
   margin-left: 25.64103%;
 }
 
-/* line 133, ../sass/_main.scss */
+/* line 141, ../sass/_main.scss */
 .textOnly {
   height: 400px;
 }
+@media (min-width: 950px) {
+  /* line 141, ../sass/_main.scss */
+  .textOnly {
+    height: 300px;
+  }
+}
 
-/* line 137, ../sass/_main.scss */
+/* line 149, ../sass/_main.scss */
 .about, .contact, .credits {
   position: relative;
   top: 50%;
@@ -252,31 +278,31 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 139, ../sass/_main.scss */
+/* line 151, ../sass/_main.scss */
 .about p, .contact p, .credits p {
   line-height: 1.6em;
 }
 
-/* line 144, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .credits {
   cursor: default;
 }
-/* line 146, ../sass/_main.scss */
+/* line 158, ../sass/_main.scss */
 .credits a {
   text-decoration: none;
 }
 
-/* line 151, ../sass/_main.scss */
+/* line 163, ../sass/_main.scss */
 .contact, .credits {
   text-align: center;
 }
 
-/* line 155, ../sass/_main.scss */
+/* line 167, ../sass/_main.scss */
 .contact a {
   text-decoration: none;
 }
 
-/* line 160, ../sass/_main.scss */
+/* line 172, ../sass/_main.scss */
 .show {
   opacity: 1;
 }
