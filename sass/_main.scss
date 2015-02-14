@@ -2,10 +2,18 @@
   @include span(12 of 12);
   @include container;
   @include clearfix;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 35px;
-  margin-bottom: 200px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @include breakpoint(600px) {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 35px;
+    margin-bottom: 200px;
+  }
 }
 
 @mixin vertical-align {
@@ -89,11 +97,15 @@ a{
 
 
 .ag1{
-  @include span(3 of 12);
+
   @include clearfix;
+  @include span(12 of 12);
+
+  @include breakpoint(600px) {
+    @include span(3 of 12);
+  }
   @include breakpoint(950px) {
     @include span(2 of 12);
-    @include clearfix;
   }
   //margin-left: span(1 wide of 12);
 }
@@ -106,11 +118,13 @@ a{
 
 // full length photo
 .ag3{
-  @include span(9 of 12 last);
+  @include span(12 of 12);
   @include clearfix;
+  @include breakpoint(600px) {
+    @include span(9 of 12 last);
+  }
   @include breakpoint(950px) {
     @include span(8 of 12);
-    @include clearfix;
   }
 }
 
@@ -124,32 +138,51 @@ a{
 }
 
 .ag5{
-  @include span(6 of 8);
   @include clearfix;
-  margin-left: span(1 wide of 8);
+  @include span(12 of 12);
+  @include breakpoint(600px) {
+    @include span(8 of 8);
+  }
+  @include breakpoint(800px) {
+    @include span(6 of 8);
+    margin-left: span(1 wide of 8);
+  }
+
 }
 
 
 
 .ag6{
-  @include span(4 of 8);
   @include clearfix;
-  margin-left: span(2 wide of 8);
+  @include span(12 of 12);
+
+  @include breakpoint(600px) {
+    @include span(4 of 8);
+    margin-left: span(2 wide of 8);
+  }
 }
 
 // This will need to be adjusted for media queries
 .textOnly{
   height: 400px;
   @include breakpoint(950px) {
+    height: 500px;
+  }
+}
+
+.textOnly-pics{
+  height: 400px;
+  @include breakpoint(950px) {
     height: 300px;
   }
-
 }
 
 .about, .contact, .credits{
-  @include vertical-align;
   p{
     line-height: 1.6em;
+  }
+  @include breakpoint(700px) {
+    @include vertical-align;
   }
 }
 
@@ -160,7 +193,7 @@ a{
   }
 }
 
-.contact, .credits{
+.contact, .credits {
   text-align: center;
 }
 

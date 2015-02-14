@@ -80,6 +80,9 @@ $(function() {
     });
   }
 
+  // Allows one to click on photographer links without shuffling deck
+  $('a.credit-link').click(function(e){ e.stopPropagation();  });
+
   // PUT THIS STUFF IN A SIAF
 
   function singleTemplate(imageName){
@@ -91,7 +94,7 @@ $(function() {
   }
 
   function textTemplate(text){
-    return "<div class='textOnly'><div class='credits'><a target='_blank' href=" + text.credit + "><p>" + text.photography + "</p></a><br><p>" + text.model + "</p></div></div>"
+    return "<div class='textOnly-pics'><div class='credits'><a class='credit-link' target='_blank' href=" + text.credit + "><p>" + text.photography + "</p></a><br><p>" + text.model + "</p></div></div>"
   }
 
 });
