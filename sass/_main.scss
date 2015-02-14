@@ -173,39 +173,120 @@ a{
   opacity: 1;
 }
 
+// home page
 
-// .ag3 {
-//   @include span(12 of 12);
-//   @include clearfix;
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-//   // // tablet view
-//   @include breakpoint(600px) {
-//     @include span(8 of 12);
-//     margin-left: span(2 wide of 12);
-//   }
+#outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+}
+.welcome {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    h1{
+      font-family: 'bebas_neue_regularregular', sans-serif;
+    }
+    h4{
+      font-family: 'MyriadPro-Regular', sans-serif;
+    }
 
-//   //desktop view
-
-//   // @include breakpoint($vertical1) {
-//   //   @include span(4 of 12);
-//   //   margin-left: span(4 wide of 12);
-//   // }
-
-//   // @include breakpoint($vertical1) {
-//   //   @include span(6 of 12);
-//   //   margin-left: span(3 wide of 12);
-//   // }
-
-//   // desktop view
-//   @include breakpoint(900px) {
-//     @include span(6 of 12);
-//     margin-left: span(3 wide of 12);
-//   }
-
-//   // vertical consideration
-
-
-//   // @include breakpoint(1070px) {
-
-//   // }
+}
+// .welcome {
+//   // position: relative;
+//   // @include span(4 of 12);
+//   // margin-left: span(4 wide of 12);
+//   //position: fixed;
+//   //top: 50%;
+//   //left: 50%;
+//   z-index: 100;
+//   //transform: translate(-50%, -50%);
 // }
+
+// .welcome-logo{
+//   //margin: 0px;
+// }
+
+// .welcome-logo h1{
+//   font-family: 'bebas_neue_regularregular', sans-serif;
+//   font-size: 60px;
+//   letter-spacing: 4px;
+//   text-shadow: rgba(0,0,0,.01) 0 0 1px;
+//   margin: 0px;
+//   margin-bottom: 20px;
+// }
+
+// .welcome h4{
+//   margin-top: 0px;
+//   font-family: 'MyriadPro-Regular', sans-serif;
+//   font-size: 20px;
+//   letter-spacing: 1px;
+//   -webkit-font-smoothing: antialiased;
+//   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+// }
+
+// .welcome h1, .welcome h4, .welcome a{
+//   text-align: center;
+//   color: #FFF;
+//   text-decoration: none;
+// }
+
+.background-image.visible {
+  opacity: 1;
+}
+
+.background-image {
+  width: 100%;
+  background: url(../images/julia_seemann4_sw.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: .75s;
+}
+
+@media only screen and (max-width: 767px) {
+  .background-image {
+    background: url(../images/julia_seemann4_sw_small_screens.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: .75s;
+  }
+}

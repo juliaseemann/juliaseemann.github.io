@@ -306,3 +306,87 @@ a {
 .show {
   opacity: 1;
 }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 183, ../sass/_main.scss */
+#outer {
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+/* line 192, ../sass/_main.scss */
+.welcome {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 196, ../sass/_main.scss */
+.welcome h1 {
+  font-family: 'bebas_neue_regularregular', sans-serif;
+}
+/* line 199, ../sass/_main.scss */
+.welcome h4 {
+  font-family: 'MyriadPro-Regular', sans-serif;
+}
+
+/* line 243, ../sass/_main.scss */
+.background-image.visible {
+  opacity: 1;
+}
+
+/* line 247, ../sass/_main.scss */
+.background-image {
+  width: 100%;
+  background: url(../images/julia_seemann4_sw.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: .75s;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 271, ../sass/_main.scss */
+  .background-image {
+    background: url(../images/julia_seemann4_sw_small_screens.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: .75s;
+  }
+}
