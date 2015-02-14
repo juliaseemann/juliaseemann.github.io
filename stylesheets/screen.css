@@ -97,7 +97,6 @@ img {
   overflow: hidden;
   *zoom: 1;
   padding: 0px;
-  margin-top: 10px;
   margin-bottom: 100px;
   padding-left: 5%;
   padding-right: 5%;
@@ -312,33 +311,54 @@ a {
 
 /* line 166, ../sass/_main.scss */
 .textOnly {
-  height: 400px;
+  height: 200px;
 }
 @media (min-width: 950px) {
   /* line 166, ../sass/_main.scss */
   .textOnly {
-    height: 500px;
+    height: 400px;
   }
 }
 
-/* line 173, ../sass/_main.scss */
+/* line 174, ../sass/_main.scss */
 .textOnly-pics {
-  height: 400px;
+  height: 200px;
 }
 @media (min-width: 950px) {
-  /* line 173, ../sass/_main.scss */
+  /* line 174, ../sass/_main.scss */
   .textOnly-pics {
     height: 300px;
   }
 }
 
 /* line 181, ../sass/_main.scss */
+.textOnly-about {
+  height: 400px;
+}
+@media (min-width: 950px) {
+  /* line 181, ../sass/_main.scss */
+  .textOnly-about {
+    height: 500px;
+  }
+}
+
+/* line 188, ../sass/_main.scss */
+.contact {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 193, ../sass/_main.scss */
 .about p, .contact p, .credits p {
   line-height: 1.6em;
 }
+
 @media (min-width: 700px) {
-  /* line 180, ../sass/_main.scss */
-  .about, .contact, .credits {
+  /* line 199, ../sass/_main.scss */
+  .about {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -347,26 +367,31 @@ a {
   }
 }
 
-/* line 189, ../sass/_main.scss */
+/* line 206, ../sass/_main.scss */
 .credits {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: default;
 }
-/* line 191, ../sass/_main.scss */
+/* line 209, ../sass/_main.scss */
 .credits a {
   text-decoration: none;
 }
 
-/* line 196, ../sass/_main.scss */
+/* line 214, ../sass/_main.scss */
 .contact, .credits {
   text-align: center;
 }
 
-/* line 200, ../sass/_main.scss */
+/* line 218, ../sass/_main.scss */
 .contact a {
   text-decoration: none;
 }
 
-/* line 205, ../sass/_main.scss */
+/* line 223, ../sass/_main.scss */
 .show {
   opacity: 1;
 }
@@ -379,7 +404,7 @@ a {
     opacity: 1;
   }
 }
-/* line 216, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 #outer {
   display: table;
   height: 100%;
@@ -391,52 +416,52 @@ a {
   z-index: 100;
 }
 
-/* line 226, ../sass/_main.scss */
+/* line 244, ../sass/_main.scss */
 .welcome {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 230, ../sass/_main.scss */
+/* line 248, ../sass/_main.scss */
 .welcome h1 {
   font-family: 'bebas_neuebold', sans-serif;
   font-size: 40px;
   margin-bottom: 10px;
   letter-spacing: 4px;
 }
-/* line 236, ../sass/_main.scss */
+/* line 254, ../sass/_main.scss */
 .welcome h4 {
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
 }
-/* line 241, ../sass/_main.scss */
+/* line 259, ../sass/_main.scss */
 .welcome h1, .welcome h4 {
   color: #FFF;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-/* line 246, ../sass/_main.scss */
+/* line 264, ../sass/_main.scss */
 .welcome a {
   text-decoration: none;
 }
 @media (min-width: 600px) {
-  /* line 250, ../sass/_main.scss */
+  /* line 268, ../sass/_main.scss */
   .welcome h1 {
     font-size: 55px;
   }
-  /* line 253, ../sass/_main.scss */
+  /* line 271, ../sass/_main.scss */
   .welcome h4 {
     font-size: 17px;
   }
 }
 
-/* line 298, ../sass/_main.scss */
+/* line 316, ../sass/_main.scss */
 .background-image.visible {
   opacity: 1;
 }
 
-/* line 302, ../sass/_main.scss */
+/* line 320, ../sass/_main.scss */
 .background-image {
   background: url(../images/julia_seemann4_sw.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

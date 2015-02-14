@@ -41,12 +41,12 @@ $(function() {
   // Renders based on this information
   var i = 1;
   $('div.gallery').click(function() {
-
     if(i === photoCollection.length){
       i = 0;
     }
     renderTemplate( photoCollection[i], 'div.gallery', fadeDuration );
     i++
+
   });
 
   $('h2.menuItem').click(function() {

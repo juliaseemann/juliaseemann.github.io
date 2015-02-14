@@ -3,7 +3,7 @@
   @include container;
   @include clearfix;
   padding: 0px;
-  margin-top: 10px;
+  // margin-top: 10px;
   margin-bottom: 100px;
   padding-left: 5%;
   padding-right: 5%;
@@ -164,29 +164,47 @@ a{
 
 // This will need to be adjusted for media queries
 .textOnly{
+  height: 200px;
+  @include breakpoint(950px) {
+    height: 400px;
+  }
+}
+
+
+.textOnly-pics{
+  height: 200px;
+  @include breakpoint(950px) {
+    height: 300px;
+  }
+}
+
+.textOnly-about{
   height: 400px;
   @include breakpoint(950px) {
     height: 500px;
   }
 }
 
-.textOnly-pics{
-  height: 400px;
-  @include breakpoint(950px) {
-    height: 300px;
-  }
+.contact{
+  @include vertical-align;
 }
 
 .about, .contact, .credits{
   p{
     line-height: 1.6em;
   }
+
+}
+
+.about{
   @include breakpoint(700px) {
     @include vertical-align;
   }
 }
 
+
 .credits{
+  @include vertical-align;
   cursor: default;
   a{
     text-decoration: none;
