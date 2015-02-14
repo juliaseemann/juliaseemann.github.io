@@ -179,7 +179,7 @@ a{
 }
 
 .textOnly-about{
-  height: 400px;
+  height: 600px;
   @include breakpoint(950px) {
     height: 500px;
   }
