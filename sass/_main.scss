@@ -188,6 +188,7 @@ a{
     top: 0;
     overflow: hidden;
     position: fixed;
+    z-index: 100;
 }
 .welcome {
     display: table-cell;
@@ -195,9 +196,17 @@ a{
     text-align: center;
     h1{
       font-family: 'bebas_neue_regularregular', sans-serif;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
     h4{
       font-family: 'MyriadPro-Regular', sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    h1, h4{
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     }
 
 }
@@ -267,19 +276,29 @@ a{
   -webkit-animation-delay: .75s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 48em) {
   .background-image {
-    background: url(../images/julia_seemann4_sw_small_screens.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 3;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
+    height: 1707px;
+    background-image: url(../images/julia_seemann4_sw_mobile.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    // background: url(../images/julia_seemann4_sw_small_screens.jpg) no-repeat center center fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // z-index: 3;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
 
     opacity: 0;
 

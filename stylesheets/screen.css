@@ -324,29 +324,39 @@ a {
   top: 0;
   overflow: hidden;
   position: fixed;
+  z-index: 100;
 }
 
-/* line 192, ../sass/_main.scss */
+/* line 193, ../sass/_main.scss */
 .welcome {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 196, ../sass/_main.scss */
+/* line 197, ../sass/_main.scss */
 .welcome h1 {
   font-family: 'bebas_neue_regularregular', sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-/* line 199, ../sass/_main.scss */
+/* line 202, ../sass/_main.scss */
 .welcome h4 {
   font-family: 'MyriadPro-Regular', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+/* line 207, ../sass/_main.scss */
+.welcome h1, .welcome h4 {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-/* line 243, ../sass/_main.scss */
+/* line 252, ../sass/_main.scss */
 .background-image.visible {
   opacity: 1;
 }
 
-/* line 247, ../sass/_main.scss */
+/* line 256, ../sass/_main.scss */
 .background-image {
   width: 100%;
   background: url(../images/julia_seemann4_sw.jpg) no-repeat center center fixed;
@@ -368,20 +378,18 @@ a {
   -webkit-animation-delay: .75s;
 }
 
-@media only screen and (max-width: 767px) {
-  /* line 271, ../sass/_main.scss */
+@media only screen and (min-width: 48em) {
+  /* line 280, ../sass/_main.scss */
   .background-image {
-    background: url(../images/julia_seemann4_sw_small_screens.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 3;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
+    height: 1707px;
+    background-image: url(../images/julia_seemann4_sw_mobile.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    z-index: -1;
     opacity: 0;
     -webkit-animation-name: fade-in;
     -webkit-animation-duration: 1s;
