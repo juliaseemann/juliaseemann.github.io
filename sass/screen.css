@@ -1,0 +1,63 @@
+/*
+Error: File to import not found or unreadable: compass/reset.
+       Load path: /Users/christopherlee/code/freelance/juliaseemann.github.io/sass
+        on line 6 of sass/screen.scss
+
+1:   /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: @import "breakpoint";
+8: @import "compass/utilities/general/clearfix";
+9: @import "susy";
+10: @import "compass/utilities";
+11: @import "compass/layout";
+
+Backtrace:
+sass/screen.scss:6
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/christopherlee/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/christopherlee/.rbenv/versions/2.1.0/bin/sass:23:in `load'
+/Users/christopherlee/.rbenv/versions/2.1.0/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: /Users/christopherlee/code/freelance/juliaseemann.github.io/sass\A         on line 6 of sass/screen.scss\A \A 1:   /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: @import \"breakpoint\";\A 8: @import \"compass/utilities/general/clearfix\";\A 9: @import \"susy\";\A 10: @import \"compass/utilities\";\A 11: @import \"compass/layout\";"; }

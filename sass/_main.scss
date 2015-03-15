@@ -164,7 +164,7 @@ a{
 
 // This will need to be adjusted for media queries
 .textOnly{
-  height: 200px;
+  height: 180px;
   @include breakpoint(950px) {
     height: 400px;
   }
@@ -179,7 +179,7 @@ a{
 }
 
 .textOnly-about{
-  height: 600px;
+  height: 500px;
   @include breakpoint(950px) {
     height: 500px;
   }
@@ -230,6 +230,21 @@ a{
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+@keyframes fade-in{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 #outer {
     display: table;
@@ -338,6 +353,13 @@ a{
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-delay: .75s;
+
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: .75s;
+
     // @include breakpoint(950px) {
     //   background:  url(../images/julia_seemann4_sw_reduction_test.jpg) no-repeat center center fixed;
     // }

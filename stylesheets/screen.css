@@ -311,7 +311,7 @@ a {
 
 /* line 166, ../sass/_main.scss */
 .textOnly {
-  height: 200px;
+  height: 180px;
 }
 @media (min-width: 950px) {
   /* line 166, ../sass/_main.scss */
@@ -333,7 +333,7 @@ a {
 
 /* line 181, ../sass/_main.scss */
 .textOnly-about {
-  height: 600px;
+  height: 500px;
 }
 @media (min-width: 950px) {
   /* line 181, ../sass/_main.scss */
@@ -404,7 +404,31 @@ a {
     opacity: 1;
   }
 }
-/* line 234, ../sass/_main.scss */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 249, ../sass/_main.scss */
 #outer {
   display: table;
   height: 100%;
@@ -416,52 +440,52 @@ a {
   z-index: 100;
 }
 
-/* line 244, ../sass/_main.scss */
+/* line 259, ../sass/_main.scss */
 .welcome {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 248, ../sass/_main.scss */
+/* line 263, ../sass/_main.scss */
 .welcome h1 {
   font-family: 'bebas_neuebold', sans-serif;
   font-size: 40px;
   margin-bottom: 10px;
   letter-spacing: 4px;
 }
-/* line 254, ../sass/_main.scss */
+/* line 269, ../sass/_main.scss */
 .welcome h4 {
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
 }
-/* line 259, ../sass/_main.scss */
+/* line 274, ../sass/_main.scss */
 .welcome h1, .welcome h4 {
   color: #FFF;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-/* line 264, ../sass/_main.scss */
+/* line 279, ../sass/_main.scss */
 .welcome a {
   text-decoration: none;
 }
 @media (min-width: 600px) {
-  /* line 268, ../sass/_main.scss */
+  /* line 283, ../sass/_main.scss */
   .welcome h1 {
     font-size: 55px;
   }
-  /* line 271, ../sass/_main.scss */
+  /* line 286, ../sass/_main.scss */
   .welcome h4 {
     font-size: 17px;
   }
 }
 
-/* line 316, ../sass/_main.scss */
+/* line 331, ../sass/_main.scss */
 .background-image.visible {
   opacity: 1;
 }
 
-/* line 320, ../sass/_main.scss */
+/* line 335, ../sass/_main.scss */
 .background-image {
   background: url(../images/julia_seemann4_sw.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -480,4 +504,9 @@ a {
   -webkit-animation-timing-function: ease-in;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-delay: .75s;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-delay: .75s;
 }
